@@ -1,0 +1,407 @@
+2019-02-19 19:36:56.809 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-19 19:36:56.892 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-19 19:36:56.895 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-19 19:36:56.896 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-19 19:36:56.897 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-19 19:36:56.898 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-19 19:36:56.899 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-19 19:37:38.575 -05:00 [DBG] Login Url: /Account/Login
+2019-02-19 19:37:38.578 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-19 19:37:38.579 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-19 19:37:38.579 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-19 19:37:38.580 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-19 19:37:38.580 -05:00 [DBG] Error Url: /home/error
+2019-02-19 19:37:38.581 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-19 19:37:44.734 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-19 19:37:44.759 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-19 19:37:44.760 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-19 19:37:44.765 -05:00 [DBG] Start discovery request
+2019-02-19 19:37:45.087 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-19 19:37:50.826 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-19 19:37:50.836 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-19 19:37:50.837 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-19 19:37:50.845 -05:00 [DBG] Start authorize request
+2019-02-19 19:37:50.876 -05:00 [DBG] No user present in authorize request
+2019-02-19 19:37:50.889 -05:00 [DBG] Start authorize request protocol validation
+2019-02-19 19:37:50.932 -05:00 [ERR] client_id is missing or too long
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{},"$type":"AuthorizeRequestValidationLog"}
+2019-02-19 19:37:50.950 -05:00 [ERR] Request validation failed
+2019-02-19 19:37:50.951 -05:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{},"$type":"AuthorizeRequestValidationLog"}
+2019-02-19 19:37:50.990 -05:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"invalid_request","ErrorDescription":"Invalid client_id","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKMPEEMPU5C:00000004","TimeStamp":"2019-02-20T00:37:50.0000000Z","ProcessId":5672,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-19 19:38:01.538 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-19 19:38:01.542 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-19 19:38:01.543 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-19 19:38:01.549 -05:00 [DBG] Start key discovery request
+2019-02-19 19:38:07.672 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-19 19:39:08.833 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-19 19:39:09.218 -05:00 [DBG] Augmenting SignInContext
+2019-02-19 19:39:09.221 -05:00 [DBG] Adding idp claim with value: local
+2019-02-19 19:39:09.221 -05:00 [DBG] Adding amr claim with value: pwd
+2019-02-19 19:39:09.223 -05:00 [DBG] Adding auth_time claim with value: 1550623149
+2019-02-19 19:39:09.234 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-19 19:39:09.250 -05:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"5ec62b32-3174-47e3-a046-2a2d4a12b875","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKMPEEMPU5C:0000000A","TimeStamp":"2019-02-20T00:39:09.0000000Z","ProcessId":5672,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-19 19:39:09.380 -05:00 [DBG] 0 persisted grants found for 5ec62b32-3174-47e3-a046-2a2d4a12b875
+2019-02-19 19:39:24.180 -05:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-19 19:39:24.228 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-02-19 19:39:24.232 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-02-19 19:39:24.234 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-02-19 19:39:24.237 -05:00 [INF] {"SubjectId":"5ec62b32-3174-47e3-a046-2a2d4a12b875","DisplayName":"Bob Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLKMPEEMPU5C:0000000D","TimeStamp":"2019-02-20T00:39:24.0000000Z","ProcessId":5672,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-02-20 15:26:23.113 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-20 15:26:23.224 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-20 15:26:23.225 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-20 15:26:23.226 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-20 15:26:23.227 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-20 15:26:23.230 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-20 15:26:23.231 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-20 15:28:53.604 -05:00 [DBG] Login Url: /Account/Login
+2019-02-20 15:28:53.608 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-20 15:28:53.609 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-20 15:28:53.609 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-20 15:28:53.611 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-20 15:28:53.612 -05:00 [DBG] Error Url: /home/error
+2019-02-20 15:28:53.613 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-20 15:28:59.783 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-20 15:29:11.063 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-20 15:29:11.530 -05:00 [DBG] Augmenting SignInContext
+2019-02-20 15:29:11.536 -05:00 [DBG] Adding idp claim with value: local
+2019-02-20 15:29:11.536 -05:00 [DBG] Adding amr claim with value: pwd
+2019-02-20 15:29:11.538 -05:00 [DBG] Adding auth_time claim with value: 1550694551
+2019-02-20 15:29:11.563 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-20 15:29:11.615 -05:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"82a7816f-1b25-42e5-80eb-93e4cd5ffefc","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKNE83TVPJH:00000004","TimeStamp":"2019-02-20T20:29:11.0000000Z","ProcessId":12620,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-20 15:29:11.750 -05:00 [DBG] 0 persisted grants found for 82a7816f-1b25-42e5-80eb-93e4cd5ffefc
+2019-02-20 15:29:30.887 -05:00 [DBG] 0 persisted grants found for 82a7816f-1b25-42e5-80eb-93e4cd5ffefc
+2019-02-20 15:29:34.706 -05:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-20 15:29:34.742 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-02-20 15:29:34.744 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-02-20 15:29:34.745 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-02-20 15:29:34.746 -05:00 [INF] {"SubjectId":"82a7816f-1b25-42e5-80eb-93e4cd5ffefc","DisplayName":"Alice Smith","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLKNE83TVPJH:0000000B","TimeStamp":"2019-02-20T20:29:34.0000000Z","ProcessId":12620,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-02-20 15:29:40.406 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-20 15:29:40.423 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-20 15:29:40.436 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-20 15:29:40.452 -05:00 [DBG] Start discovery request
+2019-02-20 15:29:41.355 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-20 15:29:44.976 -05:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-02-20 15:29:44.988 -05:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-02-20 15:29:44.989 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-02-20 15:29:45.006 -05:00 [DBG] Start userinfo request
+2019-02-20 15:29:45.014 -05:00 [DBG] Bearer token not found
+2019-02-20 15:29:45.015 -05:00 [ERR] No access token found.
+2019-02-20 15:29:49.761 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-20 15:29:49.772 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-20 15:29:49.773 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-20 15:29:49.790 -05:00 [DBG] Start authorize request
+2019-02-20 15:29:49.809 -05:00 [DBG] No user present in authorize request
+2019-02-20 15:29:49.820 -05:00 [DBG] Start authorize request protocol validation
+2019-02-20 15:29:49.851 -05:00 [ERR] client_id is missing or too long
+{"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{},"$type":"AuthorizeRequestValidationLog"}
+2019-02-20 15:29:49.864 -05:00 [ERR] Request validation failed
+2019-02-20 15:29:49.865 -05:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"AllowedRedirectUris":null,"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{},"$type":"AuthorizeRequestValidationLog"}
+2019-02-20 15:29:49.874 -05:00 [INF] {"ClientId":null,"ClientName":null,"RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"invalid_request","ErrorDescription":"Invalid client_id","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKNE83TVPJH:0000000F","TimeStamp":"2019-02-20T20:29:49.0000000Z","ProcessId":12620,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-20 15:29:54.891 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-20 15:29:54.895 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-20 15:29:54.896 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-20 15:29:54.901 -05:00 [DBG] Start key discovery request
+2019-02-20 15:30:25.271 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-20 15:30:25.279 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-20 15:30:25.287 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-20 15:30:25.299 -05:00 [DBG] Start discovery request
+2019-02-20 15:30:25.337 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-20 15:30:31.571 -05:00 [DBG] Request path /connect/deviceauthorization matched to endpoint type DeviceAuthorization
+2019-02-20 15:30:31.578 -05:00 [DBG] Endpoint enabled: DeviceAuthorization, successfully created handler: IdentityServer4.Endpoints.DeviceAuthorizationEndpoint
+2019-02-20 15:30:31.579 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DeviceAuthorizationEndpoint for /connect/deviceauthorization
+2019-02-20 15:30:31.583 -05:00 [WRN] Invalid HTTP request for device authorize endpoint
+2019-02-20 15:30:31.584 -05:00 [ERR] Device authorization error: invalid_request:invalid_request
+2019-02-20 15:36:34.753 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-20 15:36:49.276 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-20 15:36:49.308 -05:00 [DBG] Augmenting SignInContext
+2019-02-20 15:36:49.309 -05:00 [DBG] Adding idp claim with value: local
+2019-02-20 15:36:49.310 -05:00 [DBG] Adding amr claim with value: pwd
+2019-02-20 15:36:49.310 -05:00 [DBG] Adding auth_time claim with value: 1550695009
+2019-02-20 15:36:49.312 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-20 15:36:49.316 -05:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"5ec62b32-3174-47e3-a046-2a2d4a12b875","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKNE83TVPJK:00000003","TimeStamp":"2019-02-20T20:36:49.0000000Z","ProcessId":12620,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-20 15:36:49.381 -05:00 [DBG] 0 persisted grants found for 5ec62b32-3174-47e3-a046-2a2d4a12b875
+2019-02-20 15:37:24.778 -05:00 [ERR] No consent request matching request: null
+2019-02-20 19:13:41.752 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-20 19:13:41.791 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-20 19:13:41.825 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-20 19:13:41.830 -05:00 [DBG] Start discovery request
+2019-02-20 19:13:42.047 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-20 19:13:42.481 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-20 19:13:42.483 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-20 19:13:42.486 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-20 19:13:42.492 -05:00 [DBG] Start key discovery request
+2019-02-20 19:13:42.645 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-20 19:13:42.650 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-20 19:13:42.655 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-20 19:13:42.677 -05:00 [DBG] Start authorize request
+2019-02-20 19:13:42.685 -05:00 [DBG] No user present in authorize request
+2019-02-20 19:13:42.691 -05:00 [DBG] Start authorize request protocol validation
+2019-02-20 19:13:43.683 -05:00 [DBG] client found in database: true
+2019-02-20 19:13:43.701 -05:00 [DBG] client configuration validation for client client succeeded.
+2019-02-20 19:13:43.719 -05:00 [ERR] Invalid redirect_uri: http://localhost:9000/signin-oidc
+{"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"client","redirect_uri":"http://localhost:9000/signin-oidc","response_type":"id_token","scope":"openid profile email roles","response_mode":"form_post","nonce":"636863048225322055.ZjU5ZDhhNWYtNzE5MC00OWE3LTk4MTYtMDQ3ZTYzNmFjNWZlMzUwN2U5NTYtYTE3Zi00ZmI5LTg4ODktZDNhYjE0ZTc5ZTll","state":"CfDJ8KwaKpGs31ZDshcyyrCFO_1Z2wDjYyCspfAuz_Vk2a3UkJQVGdTVazkb3SeM6kteLiLCCkjd8iaS99PdOV4jCXaZz_kvsPwgknIFaLgyAxo2_Isi3bpGcpEonUCsUbFyvOb13gFzubkgzr7XRAMYCwAQMlpvSFjlRpsfx3ISsGC014v1j-J5WfCXACB1PaJFHvEUuXoq8D-6pXQlYxC1M9AGLACkO_eoZ_Hm_4VnV_iDq_fzVgdfz7kA4XX47D7c5d3hqwVuUUHvTWToUNBfF5faQeT3uzBWyJMsaMts9o5fyOfRoRdyrQ2b-8Zy8sH2pA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-20 19:13:43.803 -05:00 [ERR] Request validation failed
+2019-02-20 19:13:43.804 -05:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"client","redirect_uri":"http://localhost:9000/signin-oidc","response_type":"id_token","scope":"openid profile email roles","response_mode":"form_post","nonce":"636863048225322055.ZjU5ZDhhNWYtNzE5MC00OWE3LTk4MTYtMDQ3ZTYzNmFjNWZlMzUwN2U5NTYtYTE3Zi00ZmI5LTg4ODktZDNhYjE0ZTc5ZTll","state":"CfDJ8KwaKpGs31ZDshcyyrCFO_1Z2wDjYyCspfAuz_Vk2a3UkJQVGdTVazkb3SeM6kteLiLCCkjd8iaS99PdOV4jCXaZz_kvsPwgknIFaLgyAxo2_Isi3bpGcpEonUCsUbFyvOb13gFzubkgzr7XRAMYCwAQMlpvSFjlRpsfx3ISsGC014v1j-J5WfCXACB1PaJFHvEUuXoq8D-6pXQlYxC1M9AGLACkO_eoZ_Hm_4VnV_iDq_fzVgdfz7kA4XX47D7c5d3hqwVuUUHvTWToUNBfF5faQeT3uzBWyJMsaMts9o5fyOfRoRdyrQ2b-8Zy8sH2pA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-20 19:13:43.817 -05:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Invalid redirect_uri","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKNE83TVPJN:00000001","TimeStamp":"2019-02-21T00:13:43.0000000Z","ProcessId":12620,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-22 11:03:14.268 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-22 11:03:14.330 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-22 11:03:14.331 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-22 11:03:14.331 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-22 11:03:14.332 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-22 11:03:14.333 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-22 11:03:14.336 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-22 11:03:42.412 -05:00 [DBG] Login Url: /Account/Login
+2019-02-22 11:03:42.420 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 11:03:42.421 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 11:03:42.422 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 11:03:42.423 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 11:03:42.423 -05:00 [DBG] Error Url: /home/error
+2019-02-22 11:03:42.424 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-22 11:08:17.655 -05:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: http://localhost:5002
+2019-02-22 11:08:17.744 -05:00 [DBG] Origin http://localhost:5002 is allowed: true
+2019-02-22 11:08:17.749 -05:00 [DBG] CorsPolicyService allowed origin: http://localhost:5002
+2019-02-22 11:08:17.751 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 11:08:17.773 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 11:08:17.774 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 11:08:17.779 -05:00 [DBG] Start discovery request
+2019-02-22 11:08:18.533 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-22 11:08:18.633 -05:00 [DBG] CORS request made for path: /admin/version.json from origin: http://localhost:5002 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-22 11:08:18.771 -05:00 [DBG] Request path /connect/checksession matched to endpoint type Checksession
+2019-02-22 11:08:18.777 -05:00 [DBG] Endpoint enabled: Checksession, successfully created handler: IdentityServer4.Endpoints.CheckSessionEndpoint
+2019-02-22 11:08:18.779 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.CheckSessionEndpoint for /connect/checksession
+2019-02-22 11:08:18.784 -05:00 [DBG] Rendering check session result
+2019-02-22 11:08:19.648 -05:00 [DBG] CORS request made for path: /system/nop from origin: http://localhost:5002 but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-22 14:48:58.447 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 14:48:58.455 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 14:48:58.456 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 14:48:58.460 -05:00 [DBG] Start discovery request
+2019-02-22 14:48:58.696 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-22 14:48:59.022 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 14:48:59.029 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 14:48:59.030 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 14:48:59.045 -05:00 [DBG] Start key discovery request
+2019-02-22 14:48:59.193 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 14:48:59.205 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 14:48:59.206 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 14:48:59.215 -05:00 [DBG] Start authorize request
+2019-02-22 14:48:59.234 -05:00 [DBG] No user present in authorize request
+2019-02-22 14:48:59.247 -05:00 [DBG] Start authorize request protocol validation
+2019-02-22 14:48:59.960 -05:00 [DBG] client found in database: true
+2019-02-22 14:48:59.969 -05:00 [DBG] client configuration validation for client client succeeded.
+2019-02-22 14:49:00.035 -05:00 [ERR] Invalid redirect_uri: http://localhost:9000/signin-oidc
+{"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"client","redirect_uri":"http://localhost:9000/signin-oidc","response_type":"id_token","scope":"openid profile email roles","response_mode":"form_post","nonce":"636864617391294879.Mzk5YTNmYTQtYzcyMC00NDdjLWJlZGMtMDIzZjBhZTdmZGU2OTc2ZmZhNzAtYzJjMC00MjRkLWJhOWYtNjAzMzQ4N2ZmNjY5","state":"CfDJ8KwaKpGs31ZDshcyyrCFO_1dxAt3VlZbvd8hmJJw_Ta_puy7baNT9jEybBi87H3yqCl1I5qZ9YPmljUx5msqSqyP1N40FySklbJNG1fFD1hKdpZ8Egwjsbcq_55N1jeQchUCDDgMtUSyeurSe1PGM3dgkxM_6u5HnEAuR_srx10v1THnK5rv-aHCgV0DdgRaVMJkaVlmBCkQueK1kxXhVeF9EoeRawVWz7WSAEqGThF43RhrDpNeKBAGxNyKqy43T-Cxslzuv5-r_-vN1-SPOhJ9fF8nvlLBkX2PP7hai5ChjEa-XOpVLekRAzola0LGtA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 14:49:00.055 -05:00 [ERR] Request validation failed
+2019-02-22 14:49:00.056 -05:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"client","redirect_uri":"http://localhost:9000/signin-oidc","response_type":"id_token","scope":"openid profile email roles","response_mode":"form_post","nonce":"636864617391294879.Mzk5YTNmYTQtYzcyMC00NDdjLWJlZGMtMDIzZjBhZTdmZGU2OTc2ZmZhNzAtYzJjMC00MjRkLWJhOWYtNjAzMzQ4N2ZmNjY5","state":"CfDJ8KwaKpGs31ZDshcyyrCFO_1dxAt3VlZbvd8hmJJw_Ta_puy7baNT9jEybBi87H3yqCl1I5qZ9YPmljUx5msqSqyP1N40FySklbJNG1fFD1hKdpZ8Egwjsbcq_55N1jeQchUCDDgMtUSyeurSe1PGM3dgkxM_6u5HnEAuR_srx10v1THnK5rv-aHCgV0DdgRaVMJkaVlmBCkQueK1kxXhVeF9EoeRawVWz7WSAEqGThF43RhrDpNeKBAGxNyKqy43T-Cxslzuv5-r_-vN1-SPOhJ9fF8nvlLBkX2PP7hai5ChjEa-XOpVLekRAzola0LGtA","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 14:49:00.093 -05:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Invalid redirect_uri","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKORT8EE8GC:00000001","TimeStamp":"2019-02-22T19:49:00.0000000Z","ProcessId":23300,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-22 15:04:27.894 -05:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-02-22 15:04:27.981 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-02-22 15:04:27.996 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-02-22 15:04:28.016 -05:00 [DBG] Start discovery request
+2019-02-22 15:04:28.841 -05:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-02-22 15:04:29.217 -05:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-02-22 15:04:29.316 -05:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-02-22 15:04:29.443 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-02-22 15:04:29.508 -05:00 [DBG] Start key discovery request
+2019-02-22 15:04:29.840 -05:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-02-22 15:04:29.881 -05:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-02-22 15:04:29.995 -05:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-02-22 15:04:30.167 -05:00 [DBG] Start authorize request
+2019-02-22 15:04:30.187 -05:00 [DBG] No user present in authorize request
+2019-02-22 15:04:30.244 -05:00 [DBG] Start authorize request protocol validation
+2019-02-22 15:04:30.954 -05:00 [DBG] client found in database: true
+2019-02-22 15:04:30.963 -05:00 [DBG] client configuration validation for client client succeeded.
+2019-02-22 15:04:30.996 -05:00 [ERR] Invalid redirect_uri: http://localhost:9000/signin-oidc
+{"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"client","redirect_uri":"http://localhost:9000/signin-oidc","response_type":"id_token","scope":"openid profile email roles","response_mode":"form_post","nonce":"636864626695573398.OWZjYWU0MDktMGVhZi00MGQ1LWJlMzgtMDEzZTdiNTg2YWIxMTU0N2M4NTctOTg2Zi00NmVkLWJjYzgtZDc3NjA3MDhkNzA3","state":"CfDJ8KwaKpGs31ZDshcyyrCFO_1TcPwiOhMrwwLiP8TJMSOvlRBILJdcC9wcIyM4I8yneTkV-cAJrYfNIQqybx5677M6cR3aQ_65gh00zmX_dIlX6Jzfm-1RHcIY2UNYaPzgvBQSv7488KMIDk7lgiITmcK0sbAArHkM3pMa9DyRAd8uNOoVy7yKILURV8nprnIv6Y2wQiftJIxUFITLxN0L_KVv43NP5KBlaRWjDTjS6J6EelTYYOuNh3pd05fbnRDzkHxB-lhQPpW3F_oWiRmxf2cGd4tZuaFLafcO04qdkwh-6aTOcjZCmQ8tkcRPs8S9zw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 15:04:31.006 -05:00 [ERR] Request validation failed
+2019-02-22 15:04:31.007 -05:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"AllowedRedirectUris":[],"SubjectId":"anonymous","ResponseType":null,"ResponseMode":null,"GrantType":null,"RequestedScopes":"","State":null,"UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"client","redirect_uri":"http://localhost:9000/signin-oidc","response_type":"id_token","scope":"openid profile email roles","response_mode":"form_post","nonce":"636864626695573398.OWZjYWU0MDktMGVhZi00MGQ1LWJlMzgtMDEzZTdiNTg2YWIxMTU0N2M4NTctOTg2Zi00NmVkLWJjYzgtZDc3NjA3MDhkNzA3","state":"CfDJ8KwaKpGs31ZDshcyyrCFO_1TcPwiOhMrwwLiP8TJMSOvlRBILJdcC9wcIyM4I8yneTkV-cAJrYfNIQqybx5677M6cR3aQ_65gh00zmX_dIlX6Jzfm-1RHcIY2UNYaPzgvBQSv7488KMIDk7lgiITmcK0sbAArHkM3pMa9DyRAd8uNOoVy7yKILURV8nprnIv6Y2wQiftJIxUFITLxN0L_KVv43NP5KBlaRWjDTjS6J6EelTYYOuNh3pd05fbnRDzkHxB-lhQPpW3F_oWiRmxf2cGd4tZuaFLafcO04qdkwh-6aTOcjZCmQ8tkcRPs8S9zw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-02-22 15:04:31.019 -05:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Authorize","SubjectId":null,"Scopes":"","GrantType":null,"Error":"unauthorized_client","ErrorDescription":"Invalid redirect_uri","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLKORT8EE8GI:00000001","TimeStamp":"2019-02-22T20:04:31.0000000Z","ProcessId":23300,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-02-22 15:27:42.337 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-22 15:27:42.392 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-22 15:27:42.393 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-22 15:27:42.393 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-22 15:27:42.394 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-22 15:27:42.395 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-22 15:27:42.395 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-22 15:28:05.401 -05:00 [DBG] Login Url: /Account/Login
+2019-02-22 15:28:05.405 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-22 15:28:05.405 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-22 15:28:05.405 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-22 15:28:05.406 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-22 15:28:05.406 -05:00 [DBG] Error Url: /home/error
+2019-02-22 15:28:05.406 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-22 15:29:38.294 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-22 15:29:52.558 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-22 15:29:53.015 -05:00 [DBG] Augmenting SignInContext
+2019-02-22 15:29:53.019 -05:00 [DBG] Adding idp claim with value: local
+2019-02-22 15:29:53.019 -05:00 [DBG] Adding amr claim with value: pwd
+2019-02-22 15:29:53.020 -05:00 [DBG] Adding auth_time claim with value: 1550867393
+2019-02-22 15:29:53.030 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-22 15:29:53.058 -05:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"5ec62b32-3174-47e3-a046-2a2d4a12b875","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKP0GVVJJ75:00000007","TimeStamp":"2019-02-22T20:29:53.0000000Z","ProcessId":18296,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-22 15:29:53.149 -05:00 [ERR] No consent request matching request: null
+2019-02-22 15:32:52.955 -05:00 [DBG] 0 persisted grants found for 5ec62b32-3174-47e3-a046-2a2d4a12b875
+2019-02-22 18:18:41.438 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-22 18:18:41.517 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-22 18:18:41.517 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-22 18:18:41.518 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-22 18:18:41.518 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-22 18:18:41.519 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-22 18:18:41.520 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-23 11:04:45.809 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-23 11:04:45.870 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-23 11:04:45.871 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-23 11:04:45.872 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-23 11:04:45.873 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-23 11:04:45.874 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-23 11:04:45.875 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-23 11:05:30.546 -05:00 [DBG] Login Url: /Account/Login
+2019-02-23 11:05:30.552 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-23 11:05:30.553 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-23 11:05:30.553 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-23 11:05:30.554 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-23 11:05:30.554 -05:00 [DBG] Error Url: /home/error
+2019-02-23 11:05:30.555 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-23 11:05:35.299 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-23 11:05:45.929 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-23 11:05:46.431 -05:00 [DBG] Augmenting SignInContext
+2019-02-23 11:05:46.436 -05:00 [DBG] Adding idp claim with value: local
+2019-02-23 11:05:46.436 -05:00 [DBG] Adding amr claim with value: pwd
+2019-02-23 11:05:46.437 -05:00 [DBG] Adding auth_time claim with value: 1550937946
+2019-02-23 11:05:46.450 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-23 11:05:46.502 -05:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"82a7816f-1b25-42e5-80eb-93e4cd5ffefc","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKPL2TS6COB:00000004","TimeStamp":"2019-02-23T16:05:46.0000000Z","ProcessId":24816,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-23 11:05:46.673 -05:00 [DBG] 0 persisted grants found for 82a7816f-1b25-42e5-80eb-93e4cd5ffefc
+2019-02-25 16:32:03.794 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-25 16:32:04.930 -05:00 [FTL] Application startup exception
+System.InvalidOperationException: Scheme already exists: Identity.Application
+   at Microsoft.AspNetCore.Authentication.AuthenticationOptions.AddScheme(String name, Action`1 configureBuilder)
+   at Microsoft.AspNetCore.Authentication.AuthenticationBuilder.<>c__DisplayClass4_0`2.<AddSchemeHelper>b__0(AuthenticationOptions o)
+   at Microsoft.Extensions.Options.ConfigureNamedOptions`1.Configure(String name, TOptions options)
+   at Microsoft.Extensions.Options.OptionsFactory`1.Create(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.<>c__DisplayClass5_0.<Get>b__0()
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at Microsoft.Extensions.Options.OptionsCache`1.GetOrAdd(String name, Func`1 createOptions)
+   at Microsoft.Extensions.Options.OptionsManager`1.Get(String name)
+   at Microsoft.Extensions.Options.OptionsManager`1.get_Value()
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options, IDictionary`2 schemes)
+   at Microsoft.AspNetCore.Authentication.AuthenticationSchemeProvider..ctor(IOptions`1 options)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitScoped(ScopedCallSite scopedCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitSingleton(SingletonCallSite singletonCallSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(IServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.DynamicServiceProviderEngine.<>c__DisplayClass1_0.<RealizeService>b__0(ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngine.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService[T](IServiceProvider provider)
+   at Microsoft.AspNetCore.Builder.IdentityServerApplicationBuilderExtensions.ValidateAsync(IServiceProvider services, ILogger logger)
+   at Microsoft.AspNetCore.Builder.IdentityServerApplicationBuilderExtensions.Validate(IApplicationBuilder app) in C:\local\identity\server4\IdentityServer4\src\Configuration\IdentityServerApplicationBuilderExtensions.cs:line 74
+   at Microsoft.AspNetCore.Builder.IdentityServerApplicationBuilderExtensions.UseIdentityServer(IApplicationBuilder app) in C:\local\identity\server4\IdentityServer4\src\Configuration\IdentityServerApplicationBuilderExtensions.cs:line 29
+   at AuthServer.Startup.Configure(IApplicationBuilder app) in C:\Users\Ismael López\source\NetCoreProjects\AuthServer\Startup.cs:line 117
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-02-25 16:51:15.358 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-25 16:51:15.420 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-25 16:51:15.422 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-25 16:51:15.423 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-25 16:51:15.424 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-25 16:51:15.427 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-25 16:51:15.428 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-26 10:28:40.101 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-26 10:28:40.254 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-26 10:28:40.254 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-26 10:28:40.254 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-26 10:28:40.255 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-26 10:28:40.255 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-26 10:28:40.256 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-26 10:28:42.127 -05:00 [DBG] Login Url: /Account/Login
+2019-02-26 10:28:42.137 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-26 10:28:42.137 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-26 10:28:42.138 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-26 10:28:42.138 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-26 10:28:42.138 -05:00 [DBG] Error Url: /home/error
+2019-02-26 10:28:42.139 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-26 13:08:35.599 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-26 13:08:35.689 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-26 13:08:35.689 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-26 13:08:35.689 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-26 13:08:35.689 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-26 13:08:35.690 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-26 13:08:35.690 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-26 13:08:36.419 -05:00 [DBG] Login Url: /Account/Login
+2019-02-26 13:08:36.423 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-26 13:08:36.423 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-26 13:08:36.423 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-26 13:08:36.423 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-26 13:08:36.423 -05:00 [DBG] Error Url: /home/error
+2019-02-26 13:08:36.423 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-26 16:03:31.498 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-26 16:03:31.665 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-26 16:03:31.666 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-26 16:03:31.666 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-26 16:03:31.666 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-26 16:03:31.666 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-26 16:03:31.666 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-26 16:03:33.021 -05:00 [DBG] Login Url: /Account/Login
+2019-02-26 16:03:33.029 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-26 16:03:33.030 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-26 16:03:33.031 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-26 16:03:33.031 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-26 16:03:33.031 -05:00 [DBG] Error Url: /home/error
+2019-02-26 16:03:33.031 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-26 16:07:55.522 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-26 16:09:49.957 -05:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-26 16:09:50.479 -05:00 [DBG] Augmenting SignInContext
+2019-02-26 16:09:50.522 -05:00 [DBG] Adding idp claim with value: local
+2019-02-26 16:09:50.522 -05:00 [DBG] Adding amr claim with value: pwd
+2019-02-26 16:09:50.524 -05:00 [DBG] Adding auth_time claim with value: 1551215390
+2019-02-26 16:09:50.544 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-26 16:09:50.589 -05:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"5ec62b32-3174-47e3-a046-2a2d4a12b875","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKS5NENSS77:00000001","TimeStamp":"2019-02-26T21:09:50.0000000Z","ProcessId":17112,"LocalIpAddress":"127.0.0.1:19136","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-26 16:09:50.710 -05:00 [DBG] 0 persisted grants found for 5ec62b32-3174-47e3-a046-2a2d4a12b875
+2019-02-26 16:59:26.534 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-26 16:59:26.620 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-26 16:59:26.620 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-26 16:59:26.620 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-26 16:59:26.620 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-26 16:59:26.621 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-26 16:59:26.621 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-26 16:59:27.100 -05:00 [DBG] Login Url: /Account/Login
+2019-02-26 16:59:27.102 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-26 16:59:27.102 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-26 16:59:27.102 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-26 16:59:27.103 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-26 16:59:27.103 -05:00 [DBG] Error Url: /home/error
+2019-02-26 16:59:27.103 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-26 17:23:34.583 -05:00 [INF] Starting IdentityServer4 version 2.3.2.0
+2019-02-26 17:23:34.648 -05:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-02-26 17:23:34.648 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-02-26 17:23:34.648 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-02-26 17:23:34.648 -05:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-02-26 17:23:34.649 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-02-26 17:23:34.649 -05:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-02-26 17:23:35.255 -05:00 [DBG] Login Url: /Account/Login
+2019-02-26 17:23:35.258 -05:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-02-26 17:23:35.258 -05:00 [DBG] Logout Url: /Account/Logout
+2019-02-26 17:23:35.258 -05:00 [DBG] ConsentUrl Url: /consent
+2019-02-26 17:23:35.258 -05:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-02-26 17:23:35.258 -05:00 [DBG] Error Url: /home/error
+2019-02-26 17:23:35.258 -05:00 [DBG] Error Id Parameter: errorId
+2019-02-26 17:23:41.287 -05:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2019-02-26 17:23:42.791 -05:00 [INF] AuthenticationScheme: Google was challenged.
+2019-02-26 17:23:48.321 -05:00 [INF] AuthenticationScheme: Identity.External signed in.
+2019-02-26 17:23:49.340 -05:00 [INF] {"Username":null,"Provider":"Google","ProviderUserId":"101428644261540592232","SubjectId":"d646d9d4-6e5a-4e4e-a1df-0e250299315e","DisplayName":"Ismael del Carmen Lopez Aguilar","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLKS746221L0:00000004","TimeStamp":"2019-02-26T22:23:49.0000000Z","ProcessId":10228,"LocalIpAddress":"127.0.0.1:40136","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-02-26 17:23:49.396 -05:00 [DBG] Augmenting SignInContext
+2019-02-26 17:23:49.399 -05:00 [DBG] Adding amr claim with value: external
+2019-02-26 17:23:49.407 -05:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-02-26 17:23:49.418 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-02-26 17:23:49.539 -05:00 [DBG] 0 persisted grants found for d646d9d4-6e5a-4e4e-a1df-0e250299315e
+2019-02-26 17:23:59.981 -05:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-02-26 17:24:00.054 -05:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2019-02-26 17:24:00.054 -05:00 [INF] AuthenticationScheme: Identity.External signed out.
+2019-02-26 17:24:00.055 -05:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2019-02-26 17:24:00.056 -05:00 [INF] {"SubjectId":"d646d9d4-6e5a-4e4e-a1df-0e250299315e","DisplayName":"Ismael del Carmen Lopez Aguilar","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLKS746221KV:00000005","TimeStamp":"2019-02-26T22:24:00.0000000Z","ProcessId":10228,"LocalIpAddress":"127.0.0.1:40136","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
